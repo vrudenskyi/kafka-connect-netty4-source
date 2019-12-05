@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.mckesson.kafka.connect</groupId>
+		<artifactId>kafka-connect-parent</artifactId>
+		<version>1.0.0.ga</version>
+	</parent>
+
+	<artifactId>netty4-source</artifactId>
+
+	<dependencies>
+
+                 <!-- parent managed deps -->
+		<dependency>
+			<groupId>com.mckesson.kafka.connect</groupId>
+			<artifactId>kafka-connect-common</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.37.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+                        <version>1.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+                        <version>1.5</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.snmp4j</groupId>
+			<artifactId>snmp4j</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>net.percederberg.mibble</groupId>
+			<artifactId>mibble-parser</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/net.percederberg.mibble/mibble-mibs -->
+		<dependency>
+			<groupId>net.percederberg.mibble</groupId>
+			<artifactId>mibble-mibs</artifactId>
+			<version>2.9.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paloaltonetworks</groupId>
+			<artifactId>snmp-mib</artifactId>
+			<version>9.0</version>
+		</dependency>
+		
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>maven-repo-mibble</id>
+			<url>https://raw.github.com/bnese/maven-repo-mibble/master/</url>
+		</repository>
+		
+		<repository>
+			<id>mopennms</id>
+			<url>https://repo.opennms.org/maven2/</url>
+		</repository>
+	</repositories>
+
+</project>
