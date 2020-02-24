@@ -18,33 +18,27 @@
 			<groupId>com.mckesson.kafka.connect</groupId>
 			<artifactId>kafka-connect-common</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+		</dependency>
+
 
 		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty-all</artifactId>
 			<version>4.1.37.Final</version>
 		</dependency>
-
 		<dependency>
 			<groupId>commons-beanutils</groupId>
 			<artifactId>commons-beanutils</artifactId>
                         <version>1.9.2</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-csv</artifactId>
-                        <version>1.5</version>
-		</dependency>
-
-
-
-		<dependency>
 			<groupId>org.snmp4j</groupId>
 			<artifactId>snmp4j</artifactId>
 			<version>3.3.1</version>
 		</dependency>
-
-
 		<dependency>
 			<groupId>net.percederberg.mibble</groupId>
 			<artifactId>mibble-parser</artifactId>
